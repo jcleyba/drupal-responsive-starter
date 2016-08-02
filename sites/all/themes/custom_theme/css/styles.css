@@ -1,0 +1,24 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+
+
+/* Layout rules */
+@import "responsive.css";
+@import "navigation.css";
+@import "print.css";
+@import "misc.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+
+#page {
+	max-width: 960px;
+	margin: auto;
+}

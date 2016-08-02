@@ -1,0 +1,147 @@
+; Packaging information for starter
+name = "Starter"
+description = "Profile to start a clean responsive website - by JC"
+exclusive = "0"
+core = "7.x"
+; ----------
+; Dependencias
+; ----------
+; Administration
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+; Chaos tool suite
+dependencies[] = bulk_export
+dependencies[] = ctools
+dependencies[] = ctools_access_ruleset
+dependencies[] = ctools_ajax_sample
+dependencies[] = ctools_custom_content
+dependencies[] = page_manager
+dependencies[] = stylizer
+dependencies[] = views_content
+; Core
+dependencies[] = block
+dependencies[] = color
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = locale
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = trigger
+dependencies[] = update
+dependencies[] = user
+; Development
+dependencies[] = profiler_builder
+dependencies[] = profiler_builder_extras
+; Fields
+dependencies[] = email
+dependencies[] = link
+; Multilingual
+dependencies[] = l10n_update
+; Other
+dependencies[] = backup_migrate
+dependencies[] = block_class
+dependencies[] = libraries
+dependencies[] = node_class
+dependencies[] = pathauto
+dependencies[] = retina_images
+dependencies[] = token
+; Path management
+dependencies[] = globalredirect
+; SEO
+dependencies[] = metatag
+dependencies[] = metatag_opengraph
+; User interface
+dependencies[] = ckeditor
+dependencies[] = elfinder
+; Views
+dependencies[] = views
+dependencies[] = views_slideshow
+dependencies[] = views_slideshow_cycle
+dependencies[] = views_ui
+; Webform
+dependencies[] = webform
+; XML sitemap
+dependencies[] = xmlsitemap
+dependencies[] = xmlsitemap_custom
+dependencies[] = xmlsitemap_engines
+dependencies[] = xmlsitemap_node
+
+; ----------
+; Variables
+; ----------
+variables[admin_theme] = 'seven'
+variables[backup_migrate_destination_id] = 'download'
+variables[backup_migrate_profile_id] = 'default'
+variables[backup_migrate_source_id] = 'db'
+variables[cache_class_cache_ctools_css] = 'CToolsCssCache'
+variables[date_default_timezone] = 'America/Argentina/Cordoba'
+variables[default_nodes_main] = '10'
+variables[filter_fallback_format] = 'plain_text'
+variables[javascript_parsed][0] = 'misc/drupal.js'
+variables[javascript_parsed][1] = 'misc/jquery.js'
+variables[javascript_parsed][2] = 'misc/jquery.once.js'
+variables[javascript_parsed][3] = 'misc/form.js'
+variables[javascript_parsed][4] = 'sites/all/modules/admin_menu/admin_menu.js'
+variables[javascript_parsed][5] = 'sites/all/modules/admin_menu/admin_menu_toolbar/admin_menu_toolbar.js'
+variables[javascript_parsed][6] = 'misc/tableheader.js'
+variables[javascript_parsed][7] = 'misc/collapse.js'
+variables[javascript_parsed][8] = 'sites/all/modules/profiler_builder/js/profiler_builder.js'
+variables[javascript_parsed][9] = 'misc/states.js'
+variables[language_count] = 2
+variables[language_negotiation_language_content][locale-interface][callbacks][language] = 'locale_language_from_interface'
+variables[language_negotiation_language_content][locale-interface][file] = 'includes/locale.inc'
+variables[language_negotiation_language_url][locale-url][callbacks][language] = 'locale_language_from_url'
+variables[language_negotiation_language_url][locale-url][callbacks][switcher] = 'locale_language_switcher_url'
+variables[language_negotiation_language_url][locale-url][callbacks][url_rewrite] = 'locale_language_url_rewrite_url'
+variables[language_negotiation_language_url][locale-url][file] = 'includes/locale.inc'
+variables[language_negotiation_language_url][locale-url-fallback][callbacks][language] = 'locale_language_url_fallback'
+variables[language_negotiation_language_url][locale-url-fallback][file] = 'includes/locale.inc'
+variables[language_types][language] = true
+variables[language_types][language_content] = false
+variables[language_types][language_url] = false
+variables[metatag_enable_node] = true
+variables[metatag_enable_node__article] = true
+variables[metatag_enable_node__page] = true
+variables[metatag_enable_node__webform] = true
+variables[metatag_enable_taxonomy_term] = true
+variables[metatag_enable_taxonomy_term__tags] = true
+variables[metatag_enable_user] = true
+variables[metatag_enable_user__user] = true
+variables[metatag_has_revision_id] = true
+variables[metatag_schema_installed] = true
+variables[node_admin_theme] = '1'
+variables[node_options_page][0] = 'status'
+variables[pathauto_blog_pattern] = 'blogs/[user:name]'
+variables[pathauto_forum_pattern] = '[term:vocabulary]/[term:name]'
+variables[pathauto_node_pattern] = '/[node:title]'
+variables[pathauto_punctuation_hyphen] = 1
+variables[pathauto_taxonomy_term_pattern] = '[term:vocabulary]/[term:name]'
+variables[pathauto_user_pattern] = 'users/[user:name]'
+variables[site_frontpage] = 'node'
+variables[theme_default] = 'custom_theme'
+variables[user_pictures] = '1'
+variables[user_picture_dimensions] = '1024x1024'
+variables[user_picture_file_size] = '800'
+variables[user_picture_style] = 'thumbnail'
+variables[user_register] = 2
+variables[xmlsitemap_generated_last] = 1470142013
+

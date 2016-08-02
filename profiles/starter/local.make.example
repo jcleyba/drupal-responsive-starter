@@ -1,0 +1,38 @@
+; starter make file for local development
+core = "7.x"
+api = "2"
+
+projects[drupal][version] = "7.x"
+; include the d.o. profile base
+includes[] = "drupal-org.make"
+
+; +++++ Libraries +++++
+
+; elfinder
+libraries[elfinder][directory_name] = "elfinder"
+libraries[elfinder][type] = "library"
+libraries[elfinder][destination] = "libraries"
+libraries[elfinder][download][type] = "get"
+libraries[elfinder][download][url] = "" ; TODO add download URI
+
+; jquery.cycle
+libraries[jquery.cycle][directory_name] = "jquery.cycle"
+libraries[jquery.cycle][type] = "library"
+libraries[jquery.cycle][destination] = "libraries"
+libraries[jquery.cycle][download][type] = "get"
+libraries[jquery.cycle][download][url] = "" ; TODO add download URI
+
+; json2
+libraries[json2][directory_name] = "json2"
+libraries[json2][type] = "library"
+libraries[json2][destination] = "libraries"
+libraries[json2][download][type] = "get"
+libraries[json2][download][url] = "" ; TODO add download URI
+
+; starter
+libraries[starter][directory_name] = "starter"
+libraries[starter][type] = "profile"
+libraries[starter][destination] = "../../profiles"
+libraries[starter][download][type] = "get"
+libraries[starter][download][url] = "http://ftp.drupal.org/files/projects/starter-7.x-1.x-dev.tar.gz"
+

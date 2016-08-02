@@ -1,0 +1,68 @@
+
+#block-system-main-menu {
+	display: block;
+}
+#block-system-main-menu ul li {
+	display: inline-block;
+	color:white;
+	padding:10px;
+	text-align: left;
+}
+
+#block-system-main-menu ul li ul li{
+	display: block;
+	color:white;
+	padding:10px 20px;
+}
+#block-system-main-menu ul li ul {
+	position: absolute;
+	background: black;
+}
+
+button {
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+#block-system-main-menu {
+	width:100%;
+	display: none;
+
+}	
+#block-system-main-menu ul {
+	margin: 0;
+	text-align: left;
+	padding: 0
+}
+#block-system-main-menu ul li {
+	width: 100%;
+	display: block;
+}
+#block-system-main-menu ul li ul {
+	position: inherit;
+	background: #414141;
+}
+
+button {
+	display: block;
+	background:black;
+	color:white;
+	border:none;
+	height:30px;
+	width: 40px;
+	border-radius: 4px;
+	position: absolute;
+	top:35px;
+	right:10px;
+	padding: 0 10px
+}
+button span {
+	height:2px;
+	margin:4px 0;
+	background: white;
+	display: block;
+	border-radius: 1px;
+}
+}
