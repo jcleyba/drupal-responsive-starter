@@ -1,0 +1,21 @@
+{
+  "name": "Custom",
+  "version": "0.0.1",
+  "description": "Build utility for working with the zen subtheme",
+  "author": "jcleyba",
+  "contributors": [
+    {
+      "name": "jcleyba",
+      "email": "jcleyba@gmail.com"
+    }
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-watch": "^4.3.9"
+  },
+  "license": "MIT"
+}

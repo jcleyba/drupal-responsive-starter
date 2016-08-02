@@ -1,0 +1,152 @@
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box
+}
+
+/* Set the width of the grid */
+.frame {
+  width: 100%;
+  margin: 0px auto;
+}
+
+
+/* Attribute selector */
+[class*='bit-'] {
+  float: left;
+ margin: 1% 0 1% 1.6%;
+}
+
+/* Floats last ".bit-" to the right */
+[class*='bit-']:last {
+  float: right
+}
+
+[class*='bit-']:first-of-type {
+  margin-left:0;
+}
+/* Clearfix */
+.frame:after {
+  content: "";
+  display: table;
+  clear: both
+}
+/* Main Widths */
+.bit-1  { width: 100% }
+.bit-2  { width: 49.2% }
+.bit-3  { width: 32.26%}
+.bit-4  { width: 23.8% }
+.bit-5  { width: 18.72% }
+.bit-6  { width: 15.33% }
+.bit-7  { width: 12.91% }
+.bit-8  { width: 11.1% }
+.bit-9  { width: 9.68% }
+.bit-10 { width: 8.56% }
+.bit-11 { width: 7.63% }
+.bit-12 { width: 6.86% }
+.bit-66 { width: 66.13% }
+.bit-75 { width: 74.6%}
+.bit-58 { width:61.9%}
+
+/* Landscape mobile & down */
+@media (max-width: 480px) {
+  .no-mobile {
+  display: none
+}
+  .bit-1,
+  .bit-2,
+  .bit-3,
+  .bit-4,
+  .bit-5,
+  .bit-6,
+  .bit-7,
+  .bit-8,
+  .bit-9,
+  .bit-10,
+  .bit-11,
+  .bit-12,
+  .bit-66,
+  .bit-58,
+  .bit-75 {
+    width: 100%;
+  }
+  [class*='bit-'] {
+    margin: 0;
+    padding: 10px;
+  }
+    article img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Portrait tablet to landscape */
+
+@media (min-width: 480px) and (max-width: 800px) {
+  .no-mobile {
+  display: none;
+}
+[class*='bit-']:first-of-type {
+  padding-left:1.6%;
+}
+  .bit-4,
+  .bit-6,
+  .bit-8,
+  .bit-10,
+  .bit-12,
+  .bit-75,
+  .bit-25
+   {
+    width: 49.2% 
+  }
+
+  .bit-1,
+  .bit-2,
+  .bit-3,
+  .bit-5,
+  .bit-7,
+  .bit-9,
+  .bit-11,
+  .bit-66,
+  .bit-58{
+    width: 100%
+  }
+
+}
+
+/* Landscape to small desktop */
+@media (min-width: 800px) and (max-width: 1100px) {
+  
+  .bit-7,
+  .bit-3,
+  .bit-75,
+  .bit-25,
+  {
+    width: 100%
+  }
+
+  .bit-4 {
+    width: 23.8%
+  }
+
+  .bit-66 {
+    width: 66.13%
+  }
+ .bit-3 {
+    width: 32.26%
+  }
+  .bit-2,
+  .bit-8,
+  .bit-10,
+  .bit-12 {
+    width: 49.2% 
+  }
+
+
+}
+

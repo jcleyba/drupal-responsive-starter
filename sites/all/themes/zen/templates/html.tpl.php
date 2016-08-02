@@ -41,11 +41,9 @@
     <![endif]-->
   <?php endif; ?>
 
-  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
   <script type="text/javascript" src="/sites/all/libraries/responsive.js"></script>
   <script type="text/javascript" src="/sites/all/libraries/retina-1.1.0.min.js"></script>
  
-
  </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <?php if ($skip_link_text && $skip_link_anchor): ?>
@@ -56,7 +54,5 @@
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
-
-  
 </body>
 </html>
