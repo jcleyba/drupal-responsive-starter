@@ -8,7 +8,7 @@
  */
 ?>
 <?php if ($content): ?>
-  <div class="<?php print $classes; ?>">
+  <div class="<?php print $classes; ?> row">
     <?php print $content; ?>
   </div>
 <?php endif; ?>

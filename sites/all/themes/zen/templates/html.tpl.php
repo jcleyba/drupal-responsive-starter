@@ -40,10 +40,10 @@
     <script src="<?php print $base_path . $path_to_zen; ?>/js/respond.js"></script>
     <![endif]-->
   <?php endif; ?>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+  <script type="text/javascript" src="sites/all/libraries/responsive.js"></script>
+  <script type="text/javascript" src="sites/all/libraries/retina-1.1.0.min.js"></script>
 
-  <script type="text/javascript" src="/sites/all/libraries/responsive.js"></script>
-  <script type="text/javascript" src="/sites/all/libraries/retina-1.1.0.min.js"></script>
- 
  </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <?php if ($skip_link_text && $skip_link_anchor): ?>

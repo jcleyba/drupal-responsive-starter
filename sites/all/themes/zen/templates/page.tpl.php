@@ -9,11 +9,11 @@
 ?>
 
 <div id="page">
-  
-    <header class="frame" id="header" role="banner">
+
+    <header id="header" role="banner">
       <div id="header-content">
       <?php if ($logo): ?>
-        <div class="bit-4"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
+        <div class="col"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
       </div><?php endif; ?>
 
       <?php if ($site_name || $site_slogan): ?>
@@ -25,21 +25,21 @@
           <?php endif; ?>
 
           <?php if ($site_slogan): ?>
-            <div class="bit-" id="site-slogan"><?php print $site_slogan; ?></div>
+            <div class="col" id="site-slogan"><?php print $site_slogan; ?></div>
           <?php endif; ?>
         </div>
       <?php endif; ?>
 
-     
-     <div class=""> <button id="nav-button" class="bit-"><span></span><span></span><span></span></button></div>
+
+     <div class=""> <button id="nav-button" class="col"><span></span><span></span><span></span></button></div>
       <?php print render($page['header']); ?>
     </div>
     </header>
-  
-      <div id="navigation" class="frame">
+
+      <div id="navigation" class="row">
 
       <?php if ($main_menu): ?>
-        <nav id="main-menu" role="navigation" tabindex="-1" class="bit-">
+        <nav id="main-menu" role="navigation" tabindex="-1" class="col">
           <?php
           // This code snippet is hard to modify. We recommend turning off the
           // "Main menu" on your sub-theme's settings form, deleting this PHP
@@ -63,7 +63,7 @@
 
     </div>
      <?php print render($page['highlighted']); ?>
-  <div id="main" class="frame">
+  <div id="main">
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
       <?php print render($tabs); ?>
@@ -72,15 +72,15 @@
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
     <div id="content" class="" role="main">
-    
+
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
         <h1 class="title" id="page-title"><?php print $title; ?></h1>
       <?php endif; ?>
-    
-   <div class="frame"><?php print render($page['content']); ?></div>
+
+   <div class="row" id="content-wrapper"><?php print render($page['content']); ?></div>
       <?php print $feed_icons; ?>
     </div>
 
@@ -94,7 +94,7 @@
     ?>
 
     <?php if ($sidebar_first || $sidebar_second): ?>
-      <aside class="sidebars frame">
+      <aside class="sidebars row">
       <div class="">  <?php print $sidebar_first; ?></div>
        <div class="">   <?php print $sidebar_second; ?></div>
       </aside>
@@ -102,9 +102,9 @@
 
   </div>
 </div>
- <div class="frame"> <?php print render($page['footer']); ?></div>
+ <div> <?php print render($page['footer']); ?></div>
 
 
 
-<div class="frame"><?php print render($page['bottom']); ?></div>
+<div><?php print render($page['bottom']); ?></div>
 
