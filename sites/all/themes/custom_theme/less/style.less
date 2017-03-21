@@ -15,13 +15,22 @@ body {
 .node-page,
 #page-title,
 .node-proyecto,
-.node-type-proyecto #content,
+#block-views-arquitectos-block,
 .region-footer {
   .max-width
 }
 
+.section-proyectos,
+.section-el-estudio,
+.section-quiénes-somos,
+.node-type-proyecto,
+.section-contacto {
+  .has-fixed-header
+}
+
 #page-title {
   text-align: center;
+  text-transform: uppercase;
 }
 
 .front #page-title {
@@ -30,16 +39,23 @@ body {
 
 //HEADER
 #header {
-  border-bottom: solid 3px #333;
+  box-shadow: 0px 2px 20px #333;
+  border-bottom: solid 2px #333;
+  width: 100%;
+  top: 0;
+  z-index: 11;
+  position: fixed;
+  background: rgba(255, 255, 255, .7);
   .region-header {
     align-items: center;
     li {
       font-size: 18px;
       a {
+        text-shadow: 1px 1px 2px #666;
         color: @main-color;
         text-decoration: none;
         display: inline-block;
-        border-bottom: solid 2px white;
+        border-bottom: solid 2px rgba(255, 255, 255, .0);
         &.active,
         &:hover {
           border-bottom: solid 2px orange;
@@ -93,6 +109,7 @@ body {
       width: 100%;
       background: rgba(255, 255, 255, 0.7);
       a {
+        text-shadow: 1px 1px 2px #666;
         font-size: 24px;
         color: @main-color;
         text-decoration: none;
@@ -103,7 +120,7 @@ body {
 
 .hero-img {
   position: relative;
-  height: ~'calc(100vh - 54px)';
+  height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -114,6 +131,16 @@ body {
 }
 
 //PROYECTOS
+#block-views-clon-de-home-slideshow-block {
+  position: fixed;
+  top: 0;
+  z-index: -10;
+  .hero-img {
+    filter: grayscale(70%) blur(15px);
+    transform: scale(1.03);
+  }
+}
+
 #block-views-proyectos-grid-block {
   .max-width;
 }
@@ -122,6 +149,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   .views-row {
+    font-size: 0;
     display: flex;
     text-align: center;
     align-items: center;
@@ -162,13 +190,20 @@ body {
   margin: 20px auto;
 }
 
-.node-type-proyecto #page-title {
-  position: absolute;
-  width: 100%;
-  z-index: 10;
-  padding: 15px;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
+.node-type-proyecto {
+  #page-title {
+    position: absolute;
+    left: ~'calc(50vw - 480px)';
+    width: 100%;
+    z-index: 10;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+  .field-name-body {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+  }
 }
 
 .field-name-field-imagenes {
@@ -203,4 +238,46 @@ body {
 .views-slideshow-controls-text-previous a,
 .field-slideshow-controls .prev {
   transform: rotate(180deg);
+}
+
+//QUIENES SOMOS
+.view-arquitectos {
+  margin-top: 40px;
+  .views-row-even {
+    .views-field-body {
+      order: 1
+    }
+  }
+  .views-row {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    .views-field-field-foto {
+      max-width: 40%;
+      font-size: 0;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .architech-info {
+      font-size: 36px;
+      p {
+        font-size: 18px;
+      }
+    }
+    .views-field-body {
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.7);
+      width: 60%;
+    }
+  }
+}
+
+//FOOTER
+#footer {
+  justify-content: center;
+  padding: 15px 0;
+  color: white;
 }

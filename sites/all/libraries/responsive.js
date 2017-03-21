@@ -24,10 +24,8 @@
     console.log(slidesArray);
     for (var i = 0; i < slidesArray.length; i++) {
       var url = slidesArray[i].dataset['url'];
-      console.log(url);
       slidesArray[i].style.backgroundImage = 'url(' + url + ')';
     }
-    console.log(slidesArray);
 
     // $('.is-expanded').hoverIntent(function () {
     //   var menuChild = $(this).children('ul')
