@@ -9,7 +9,7 @@ body {
   font-family: 'Josefin Sans', serif;
   font-size: 15px;
   color: @main-color;
-  line-height:normal;
+  line-height: normal;
 }
 
 .region-header,
@@ -282,6 +282,18 @@ body {
   }
 }
 
+// EL ESTUDIO
+.node-4 {
+  padding: 20px 10px !important;
+  background: @main-background;
+  p + p {
+    margin-top: 15px;
+  }
+  img {
+    border: solid 2px white;
+  }
+}
+
 // CONTACTO
 .node-webform {
   .max-width;
@@ -331,4 +343,74 @@ body {
   justify-content: center;
   padding: 15px 0;
   color: white;
+}
+
+@media screen and (max-width: @screen-tablet-max) {
+  #header {
+    padding: 5px 20px;
+  }
+
+  #footer {
+    position: fixed;
+    bottom: 0;
+  }
+
+  .node-type-proyecto #page-title {
+    position: inherit;
+    left: inherit;
+  }
+
+  .node-proyecto {
+    .mobile-max-width;
+  }
+
+  .view-proyectos-grid .view-content {
+    margin-top: 40px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: @screen-mobile-max) {
+  .node-page {
+    padding: 0 10px;
+  }
+
+  .view-arquitectos {
+    .views-row {
+      flex-direction: column;
+      .views-field-body {
+        width: 100%;
+      }
+      .views-field-field-foto {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .node-webform .form-item input {
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  #footer {
+    width: 100%;
+    display: flex;
+    position: inherit;
+  }
+
+  #page-title {
+    font-size: 24px;
+  }
+
+  .view-proyectos-grid .view-content .views-row {
+    margin: 5px 0;
+  }
+
+  .field-slideshow-controls .next,
+  .field-slideshow-controls .prev,
+  .views-slideshow-controls-text-next a,
+  .views-slideshow-controls-text-previous a {
+    width: 20px;
+    height: 20px;
+  }
 }

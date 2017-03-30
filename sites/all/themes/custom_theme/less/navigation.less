@@ -29,7 +29,7 @@ button {
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: @screen-mobile-max) {
 
   #block-system-main-menu {
     width: 100%;
@@ -40,12 +40,14 @@ button {
   #block-system-main-menu ul {
     margin: 0;
     text-align: left;
-    padding: 0
+    padding: 0;
+    flex-direction: column;
   }
 
   #block-system-main-menu ul li {
     width: 100%;
     display: block;
+    padding: 10px 20px;
   }
 
   #block-system-main-menu ul li ul {
@@ -55,23 +57,22 @@ button {
 
   button {
     display: block;
-    background: black;
+    background: transparent;
     color: white;
     border: none;
     height: 30px;
     width: 40px;
     border-radius: 4px;
     position: absolute;
-    top: 35px;
+    top: 16px;
     right: 10px;
-    padding: 0 10px
-  }
-
-  button span {
-    height: 2px;
-    margin: 4px 0;
-    background: white;
-    display: block;
-    border-radius: 1px;
+    padding: 0 10px;
+    span {
+      height: 2px;
+      margin: 4px 0;
+      background: black;
+      display: block;
+      border-radius: 1px;
+    }
   }
 }
