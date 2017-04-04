@@ -7,9 +7,16 @@
 
 body {
   font-family: 'Josefin Sans', serif;
-  font-size: 15px;
+  font-size: 16px;
   color: @main-color;
-  line-height: normal;
+  &.not-front {
+    background: #444;
+
+  }
+}
+
+p {
+  line-height: 1.5em;
 }
 
 .region-header,
@@ -30,7 +37,9 @@ body {
 }
 
 #page-title {
+  color: white;
   text-align: center;
+  margin-bottom: 40px;
   text-transform: uppercase;
 }
 
@@ -40,13 +49,12 @@ body {
 
 //HEADER
 #header {
-  box-shadow: 0px 2px 20px #333;
   border-bottom: solid 2px #333;
   width: 100%;
   top: 0;
   z-index: 11;
   position: fixed;
-  background: rgba(255, 255, 255, .7);
+  .grey-background;
   .logo {
     font-size: 0;
     img {
@@ -57,14 +65,14 @@ body {
     align-items: center;
     li {
       font-size: 18px;
-      border-bottom: solid 2px rgba(255, 255, 255, .0);
-      &.active,
+      border-bottom: solid 3px transparent;
+      &.active-trail,
       &:hover {
-        border-bottom: solid 2px orange;
+        border-bottom: solid 3px orange;
       }
       a {
         text-shadow: 1px 1px 2px #666;
-        color: @main-color;
+        color: white;
         text-decoration: none;
         display: inline-block;
       }
@@ -114,11 +122,11 @@ body {
       align-items: center;
       justify-content: center;
       width: 100%;
-      background: @main-background;
+      .grey-background;
       a {
         text-shadow: 1px 1px 2px #666;
         font-size: 24px;
-        color: @main-color;
+        color: white;
         text-decoration: none;
       }
     }
@@ -249,7 +257,6 @@ body {
 
 //QUIENES SOMOS
 .view-arquitectos {
-  margin-top: 40px;
   .views-row-even {
     .views-field-body {
       order: 1
@@ -284,8 +291,7 @@ body {
 
 // EL ESTUDIO
 .node-4 {
-  padding: 20px 10px !important;
-  background: @main-background;
+  color: white;
   p + p {
     margin-top: 15px;
   }
@@ -297,7 +303,6 @@ body {
 // CONTACTO
 .node-webform {
   .max-width;
-  margin-top: 40px;
   padding: 20px;
   background: @main-background;
   .form-item input {
@@ -346,8 +351,16 @@ body {
 }
 
 @media screen and (max-width: @screen-tablet-max) {
+  .not-front #main {
+    padding: 0 10px;
+  }
+
   #header {
     padding: 5px 20px;
+  }
+
+  .node-type-proyecto #page-title {
+    margin-bottom: 0;
   }
 
   #footer {
@@ -365,12 +378,27 @@ body {
   }
 
   .view-proyectos-grid .view-content {
-    margin-top: 40px;
     justify-content: center;
   }
 }
 
 @media screen and (max-width: @screen-mobile-max) {
+  #header {
+    .grey-background-mobile;
+    ul.menu {
+      li {
+        text-align: center;
+        margin: 5px 0;
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+    .region-header {
+      flex-direction: column;
+    }
+  }
+
   .node-page {
     padding: 0 10px;
   }
