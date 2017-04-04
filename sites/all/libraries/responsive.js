@@ -21,7 +21,6 @@
     $('.is-expanded ul').hide();
 
     var slidesArray = document.querySelectorAll('.hero-img');
-    console.log(slidesArray);
     for (var i = 0; i < slidesArray.length; i++) {
       var url = slidesArray[i].dataset['url'];
       slidesArray[i].style.backgroundImage = 'url(' + url + ')';
@@ -35,7 +34,7 @@
     /*RESPONSIVENESS*/
 
     $(window).resize(function () {
-      if ($(window).width() > 768) {
+      if ($(window).width() > 667) {
         $('#block-system-main-menu').show();
       }
 
