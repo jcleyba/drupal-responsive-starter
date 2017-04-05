@@ -96,6 +96,8 @@ p {
     position: absolute;
     z-index: 11;
     width: 100%;
+    left: 0;
+    top: ~'calc(50vh - 72px)';
   }
   .views-slideshow-cycle-processed {
     display: flex;
@@ -233,6 +235,7 @@ p {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    left: 0;
     a {
       margin: 30px;
     }
@@ -379,6 +382,7 @@ p {
 
   .view-proyectos-grid .view-content {
     justify-content: center;
+    flex-direction: column;
   }
 }
 
@@ -432,6 +436,13 @@ p {
 
   .view-proyectos-grid .view-content .views-row {
     margin: 5px 0;
+    img {
+      width: 300px;
+    }
+  }
+
+  .field-slideshow-controls {
+    top: 40px;
   }
 
   .field-slideshow-controls .next,
