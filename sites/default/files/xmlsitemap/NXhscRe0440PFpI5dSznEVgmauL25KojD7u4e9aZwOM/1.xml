@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="//localhost:8888/lnarquitectura/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>http://localhost:8888/lnarquitectura/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>http://localhost:8888/lnarquitectura/tercer-proyecto</loc><lastmod>2017-03-21T01:08Z</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>http://localhost:8888/lnarquitectura/cuarto-proyecto</loc><lastmod>2017-03-21T01:11Z</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>http://localhost:8888/lnarquitectura/contacto</loc><lastmod>2017-03-21T22:26Z</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>http://localhost:8888/lnarquitectura/segundo-proyecto</loc><lastmod>2017-03-16T02:42Z</lastmod><changefreq>weekly</changefreq></url>
+</urlset>

@@ -3,15 +3,15 @@
 @import 'mixins';
 @import 'misc';
 @import 'print';
+@import 'fonts';
 @import 'variables';
 
 body {
-  font-family: 'Josefin Sans', serif;
+  font-family: 'ArialNarrow', serif;
   font-size: 16px;
   color: @main-color;
   &.not-front {
     background: #444;
-
   }
 }
 
@@ -49,7 +49,7 @@ p {
 
 //HEADER
 #header {
-  border-bottom: solid 2px #333;
+  border-bottom: solid 2px @orange-color;
   width: 100%;
   top: 0;
   z-index: 11;
@@ -58,23 +58,24 @@ p {
   .logo {
     font-size: 0;
     img {
-      margin: 5px 0;
+      margin: 11px 0;
     }
   }
   .region-header {
-    align-items: center;
+    align-items: flex-end;
     li {
+      margin-bottom: 20px;
       font-size: 18px;
-      border-bottom: solid 3px transparent;
-      &.active-trail,
-      &:hover {
-        border-bottom: solid 3px orange;
-      }
       a {
-        text-shadow: 1px 1px 2px #666;
-        color: white;
+        padding: 0 25px 0 5px;
+        color: @orange-color;
         text-decoration: none;
         display: inline-block;
+        &.active,
+        &:hover {
+          color: white;
+          background: rgba(255, 255, 255, 0.3);
+        }
       }
     }
   }
@@ -118,16 +119,18 @@ p {
     position: relative;
     .views-field-title {
       position: absolute;
-      bottom: 30px;
-      height: 50px;
+      bottom: 0;
+      height: 65px;
       display: flex;
       align-items: center;
       justify-content: center;
       width: 100%;
-      .grey-background;
+      .grey-background-arrow;
       a {
+        display: inline-block;
+        margin-top: 12px;
         text-shadow: 1px 1px 2px #666;
-        font-size: 24px;
+        font-size: 20px;
         color: white;
         text-decoration: none;
       }
@@ -246,11 +249,14 @@ p {
 .field-slideshow-controls .prev,
 .views-slideshow-controls-text-previous a,
 .views-slideshow-controls-text-next a {
-  background: url(../images/chevron-right.svg) no-repeat;
+  background: url(../images/arrow_border_right.png) no-repeat;
   font-size: 0;
   width: 40px;
   display: inline-block;
   height: 40px;
+  &:hover {
+    background: url(../images/arrow_border_right_white.png) no-repeat;
+  }
 }
 
 .views-slideshow-controls-text-previous a,
