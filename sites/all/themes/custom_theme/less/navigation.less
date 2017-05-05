@@ -1,81 +1,84 @@
 
 #block-system-main-menu {
-  display: block;
-  min-width: 60%;
+	display: block;
+	min-width: 60%;
 }
 
 #block-system-main-menu ul.menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 #block-system-main-menu ul li {
-  display: inline-block;
-  list-style: none;
+	display: inline-block;
+	list-style: none;
 }
 
 #block-system-main-menu ul li ul li {
-  display: block;
-  color: white;
-  padding: 10px 20px;
+	display: block;
+	color: white;
+	padding: 10px 20px;
 }
 
 #block-system-main-menu ul li ul {
-  position: absolute;
-  background: black;
+	position: absolute;
+	background: black;
 }
 
 button {
-  display: none;
+	display: none;
 }
 
 @media screen and (max-width: @screen-mobile-max) {
 
-  #block-system-main-menu {
-    width: 100%;
-    display: none;
-    #block-content {
-      width: 100%;
-    }
-  }
+	#block-system-main-menu {
+		width: 100%;
+		display: none;
+		#block-content {
+			width: 100%;
+		}
+	}
 
-  #block-system-main-menu ul {
-    margin: 0;
-    text-align: left;
-    padding: 0;
-    flex-direction: column;
-  }
+	#block-system-main-menu ul {
+		margin: 0;
+		text-align: left;
+		padding: 0;
+		flex-direction: column;
+		background: rgba(0, 0, 0, 0.8);
+		margin-top: 100px;
+		width: 100%;
+	}
 
-  #block-system-main-menu ul li {
-    width: 100%;
-    display: block;
-    padding: 10px 20px;
-  }
+	#block-system-main-menu ul li {
+		width: 100%;
+		display: block;
+		padding: 10px 20px;
+	}
 
-  #block-system-main-menu ul li ul {
-    position: inherit;
-    background: #414141;
-  }
+	#block-system-main-menu ul li ul {
+		position: inherit;
+		background: #414141;
+	}
 
-  button {
-    display: block;
-    background: transparent;
-    color: white;
-    border: none;
-    height: 30px;
-    width: 40px;
-    border-radius: 4px;
-    position: absolute;
-    top: 16px;
-    right: 10px;
-    padding: 0 10px;
-    span {
-      height: 2px;
-      margin: 4px 0;
-      background: white;
-      display: block;
-      border-radius: 1px;
-    }
-  }
+	button {
+		display: block;
+		background: transparent;
+		color: white;
+		border: none;
+		height: 30px;
+		width: 40px;
+		border-radius: 4px;
+		position: absolute;
+		top: 16px;
+		right: 10px;
+		padding: 0 10px;
+		span {
+			height: 2px;
+			margin: 4px 0;
+			background: white;
+			display: block;
+			border-radius: 1px;
+		}
+	}
 }
