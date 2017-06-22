@@ -7,7 +7,7 @@ api = "2"
 projects[admin_menu][version] = "3.0-rc5"
 projects[admin_menu][subdir] = "contrib"
 
-projects[ctools][version] = "1.9"
+projects[ctools][version] = "1.12"
 projects[ctools][subdir] = "contrib"
 
 projects[profiler_builder][version] = "1.2"
@@ -16,7 +16,7 @@ projects[profiler_builder][subdir] = "contrib"
 projects[email][version] = "1.3"
 projects[email][subdir] = "contrib"
 
-projects[link][version] = "1.1"
+projects[link][version] = "1.4"
 projects[link][subdir] = "contrib"
 
 projects[l10n_update][version] = "1.1"
@@ -40,13 +40,13 @@ projects[pathauto][subdir] = "contrib"
 projects[retina_images][version] = "1.0-beta5"
 projects[retina_images][subdir] = "contrib"
 
-projects[token][version] = "1.6"
+projects[token][version] = "1.7"
 projects[token][subdir] = "contrib"
 
 projects[globalredirect][version] = "1.5"
 projects[globalredirect][subdir] = "contrib"
 
-projects[metatag][version] = "1.17"
+projects[metatag][version] = "1.21"
 projects[metatag][subdir] = "contrib"
 
 projects[ckeditor][version] = "1.17"
@@ -55,13 +55,13 @@ projects[ckeditor][subdir] = "contrib"
 projects[elfinder][version] = "0.8"
 projects[elfinder][subdir] = "contrib"
 
-projects[views][version] = "3.14"
+projects[views][version] = "3.16"
 projects[views][subdir] = "contrib"
 
-projects[views_slideshow][version] = "3.1"
+projects[views_slideshow][version] = "3.9"
 projects[views_slideshow][subdir] = "contrib"
 
-projects[webform][version] = "3.24"
+projects[webform][version] = "3.27"
 projects[webform][subdir] = "contrib"
 
 projects[xmlsitemap][version] = "2.3"
